@@ -9,6 +9,7 @@ You will find the base data file in `/data`
 Wireframes: `assets/wireframes.png`
 
 ## Time limits
+    
 
 This exercise is meant showcase your creativity and talent in problem solving against a real world scenario. To that end it should not consume your every waking moment. We recommend at max spending 3 evenings of time on the exercise. 
 
