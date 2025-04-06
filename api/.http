@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:4000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU0MTA5NTNlYjBlMGMwYWUyNTYwODI3NyIsImlhdCI6MTc0Mzg4MDQxMiwiZXhwIjoxNzQzODg0MDEyfQ.xA4bRayO-nPU-gbwftNC6jd_TMfw0WLqN0HGj6zR5gA
+
+### Login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "henderson.updated@geeknet.net",
+  "password": "23derd*334"
+}
+
+### Get current user
+GET {{baseUrl}}/api/user/me
+Authorization: Bearer {{token}}
+
+### Get balance
+GET {{baseUrl}}/api/user/balance
+Authorization: Bearer {{token}}
+
+### Update user
+PUT {{baseUrl}}/api/user/update
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": {
+    "first": "Henderson",
+    "last": "Updated"
+  },
+  "email": "henderson.updated@geeknet.net"
+}
