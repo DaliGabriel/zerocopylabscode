@@ -28,3 +28,83 @@ This exercise is meant showcase your creativity and talent in problem solving ag
 * Fully responsive UI
 * Unit Tests of the API
 * Functional Tests of the UI
+
+
+## ✅ My Implementation
+
+This submission includes:
+
+- A Node.js + Express API (inside `/api`) using LowDB for persistence
+- A Next.js + React client app (inside `/client/smart-pump-client`)
+- Simple login flow and session handling
+- Protected routes and user data updates
+- Unit and UI tests
+
+---
+
+## 🛠 Tech Stack
+
+- Backend: Node.js, Express, LowDB
+- Frontend: Next.js, React
+- Testing: Jest, React Testing Library
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/DaliGabriel/zerocopylabscode.git
+cd zerocopylabscode
+```
+
+### 2. Install dependencies
+
+#### API
+```bash
+cd api
+npm install
+```
+
+#### Client
+```bash
+cd ../client/smart-pump-client
+npm install
+```
+
+### 3. Run the API server
+
+```bash
+cd ../../api
+npm start
+```
+
+> API runs at `http://localhost:4000`
+
+### 4. Run the client app
+
+```bash
+cd ../client/smart-pump-client
+npm run dev
+```
+
+> App runs at `http://localhost:3000`
+
+---
+
+## 🧪 Running Tests
+
+### API Tests
+
+```bash
+cd api
+npm test
+```
+
+### UI Tests
+
+```bash
+cd ../client/smart-pump-client
+npm test
+```
