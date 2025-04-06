@@ -78,7 +78,7 @@ const EditModal = ({ formData, setFormData, onSubmit, onClose }) => {
                 />
                 <Button
                     type="submit"
-                    className="bg-green-600 text-white hover:bg-green-700"
+                    className="bg-green-600 text-white hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600"
                 >
                     Save Changes
                 </Button>

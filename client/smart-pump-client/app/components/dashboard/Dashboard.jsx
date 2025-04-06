@@ -1,21 +1,17 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { getUserBalance, getUserProfile } from '../../services/userService';
-import { removeToken } from '../../utils/auth';
+import useAuthRedirect from '../../hooks/useAuthRedirect';
+import { useDashboardData } from '../../hooks/useDashboardData';
+import DashboardLoading from '../Loading';
 import BalanceButton from './BalanceButton';
+import BalanceModal from './BalanceModal';
 import DashboardError from './DashboardError';
 import DashboardLayout from './DashboardLayout';
-import DashboardLoading from '../Loading';
 import EditButton from './EditButton';
+import EditModal from './EditModal';
 import UserAvatar from './UserAvatar';
 import UserInfo from './UserInfo';
-import useAuthRedirect from '../../hooks/useAuthRedirect';
-import Modal from '../Modal';
-import { useDashboardData } from '../../hooks/useDashboardData';
-import EditModal from './EditModal';
-import BalanceModal from './BalanceModal';
 
 
 const Dashboard = () => {

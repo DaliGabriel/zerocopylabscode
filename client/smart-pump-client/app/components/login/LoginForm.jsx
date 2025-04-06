@@ -32,7 +32,7 @@ const LoginForm = () => {
         <Layout>
             <form
                 onSubmit={handleSubmit}
-                className="w-full max-w-xs border border-gray-300 rounded px-6 py-8 bg-white"
+                className="w-full max-w-xs border border-gray-300 dark:border-gray-600 rounded px-6 py-8 bg-white dark:bg-gray-900 shadow-sm"
             >
                 <div className="flex flex-col items-center mb-6">
                     <Image

@@ -1,16 +1,16 @@
 import Image from 'next/image';
 
-const UserAvatar = ({ src = '/image.png' }) => (
+const UserAvatar = ({ src = '/user.png' }) => (
     <div className="flex justify-center mb-4">
-        <Image
-            src={src}
-            alt="User Avatar"
-            width={200}
-            height={200}
-            className="rounded-full"
-            priority
-            style={{ width: "auto" }}
-        />
+        <div className="w-32 h-32 relative">
+            <Image
+                src={src}
+                alt="User Avatar"
+                fill
+                className="rounded-full object-cover bg-gray-200 dark:bg-gray-800"
+                priority
+            />
+        </div>
     </div>
 );
 
